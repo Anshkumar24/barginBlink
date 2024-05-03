@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"> -->
+<link rel="stylesheet" href="style.css">
+
+<title>Bargain Blink</title>
+</head>
+<body>
+   <header class="header">
+    <nav>
+        <div class="logo">
+           <img class="logo-img" src="Images/Logo5.png" alt="logo">
+        </div>
+        <ul class="nav_link" id="nav-link">
+            <li class="link"><a href="#home">Home</a></li>
+            <li class="link"><a href="#About">About</a></li>
+            <li class="link"><a href="/Product.html">Product</a></li>
+            <li class="link"><a href="#Gallery">Gallery</a></li>
+            <li class="link"><a href="#Testimonials">Testimonial</a></li>
+
+        </ul>
+    </header>
+        <div class = "card-wrapper ">
+            <div class = "product-cart-card ">
+              <!-- card left -->
+              <div class = "product-imgs">
+                <div class = "img-display">
+                  <div class = "img-showcase">
+                    <img src = "images/shoe_1.jpg" alt = "shoe image">
+                    <img src = "images/shoe_2.jpg" alt = "shoe image">
+                    <img src = "images/shoe_3.jpg" alt = "shoe image">
+                    <img src = "images/shoe_4.jpg" alt = "shoe image">
+                  </div>
+                </div>
+                <div class = "img-select">
+                  <div class = "img-item">
+                    <a href = "#" data-id = "1">
+                      <img src = "images/shoe_1.jpg" alt = "shoe image">
+                    </a>
+                  </div>
+                  <div class = "img-item">
+                    <a href = "#" data-id = "2">
+                      <img src = "images/shoe_2.jpg" alt = "shoe image">
+                    </a>
+                  </div>
+                  <div class = "img-item">
+                    <a href = "#" data-id = "3">
+                      <img src = "images/shoe_3.jpg" alt = "shoe image">
+                    </a>
+                  </div>
+                  <div class = "img-item">
+                    <a href = "#" data-id = "4">
+                      <img src = "images/shoe_4.jpg" alt = "shoe image">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- card right -->
+              <div class = "product-content ">
+                <h2 class = "product-title">nike shoes</h2>
+                <a href = "#" class = "product-link">visit nike store</a>
+                <div class = "product-rating">
+                  <i class = "fas fa-star"></i>
+                  <i class = "fas fa-star"></i>
+                  <i class = "fas fa-star"></i>
+                  <i class = "fas fa-star"></i>
+                  <i class = "fas fa-star-half-alt"></i>
+                  <span>4.7(21)</span>
+                </div>
+      
+                <div class = "product-price">
+                  <p class = "last-price">Old Price: <span>Rs. 2570/-</span></p>
+                  <p class = "new-price">New Price: <span>Rs. 2490/- (5%)</span></p>
+                </div>
+      
+                <div class = "product-detail">
+                  <h2>about this item: </h2>
+                  <p>Nike shoes are known for their stylish design and top-notch performance. Featuring innovative technologies like Nike Air and Flyknit, they offer exceptional comfort and support. </p>
+                  <p>Popular among athletes and fashion enthusiasts, Nike shoes are perfect for any activity, combining functionality with modern aesthetics.</p>
+                  <ul>
+                    <li>Color: <span>Black</span></li>
+                    <li>Available: <span>in stock</span></li>
+                    <li>Category: <span>Shoes</span></li>
+                    <li>Shipping Area: <span>All over the world</span></li>
+                    <li>Shipping Fee: <span>Free</span></li>
+                  </ul>
+                </div>
+      
+                <div class = "purchase-info">
+                  <input type = "number" min = "0" value = "1">
+                 <!-- <a href="/cart.html"> <button type = "addtocartbutton" class = "btn">
+                  Add to Cart <i class = "fas fa-shopping-cart"></i>
+                </button></a> -->
+                 <button id="addToCart" type = "addtocart" class = "btn">
+                  Add to Cart <i class = "fas fa-shopping-cart"></i>
+                </button>
+                  <button id="addToCartBtn" type = "addtocartbutton" class = "btn">Check the Price</button>
+                </div>
+                 
+                <!-- negotiation div starts -->
+
+                <!-- <div id="priceContainer" class="nego-div ">
+                   
+                   <a href="/cart.html"><button id="price1" class="nego-btn ">---</button></a> 
+                   <a href="/cart.html"><button id="price2" class="nego-btn">---</button></a>
+                   <a href="/cart.html"><button id="price3" class="nego-btn">---</button></a>  
+                     
+                  
+                </div> -->
+
+                <div id="priceContainer" class="nego-div ">
+                   
+                  <button id="price1" class="nego-btn ">---</button>
+                  <button id="price2" class="nego-btn">---</button>
+                  <button id="price3" class="nego-btn">---</button>
+                    
+                 
+               </div>
+
+
+                <!-- negotiation div ends -->
+      
+                <div class = "social-links">
+                  <p>Share At: </p>
+                  <a href = "#">
+                    <i class = "fab fa-facebook-f"></i>
+                  </a>
+                  <a href = "#">
+                    <i class = "fab fa-twitter"></i>
+                  </a>
+                  <a href = "#">
+                    <i class = "fab fa-instagram"></i>
+                  </a>
+                  <a href = "#">
+                    <i class = "fab fa-whatsapp"></i>
+                  </a>
+                  <a href = "#">
+                    <i class = "fab fa-pinterest"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <h1 class="title">More Products</h1>
+        <div class="underline"></div>
+        <div class="feature-card-main">
+        
+            <div class=" feature-card ">
+                <img class="feature-img" src="Images/L1.jpg">
+                <h4>Unisex Blue Bag</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+
+            <div class=" feature-card ">
+                <img class="feature-img" src="Images/L2.jpg">
+                <h4>Curology Face Wash</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>$28.00</p>
+            </div>
+
+            <div class=" feature-card ">
+                <img class="feature-img" src="Images/L3.jpg">
+                <h4>Mens Red Diamond Perfume</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>$39.00</p>
+            </div>
+
+            <div class=" feature-card ">
+                <img class="feature-img" src="Images/L4.jpg">
+                <h4>Men Nike Shoe</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>$24.00</p>
+            </div>
+          
+
+            <div class="page-btn">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>&#8594;</span>
+          </div>
+      </div>
+
+
+      <div class="footer1">
+        <div class="container">
+            <div class="footer-row ">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios Mobile Phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <!-- <h3>Download Our App</h3> -->
+                    <img src="images/Logo5.png">
+                    <!-- <p class="copyright">Our Purpose is to provide product in good rate of amount to the Many.</p> -->
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                        <li>Linkedin</li>
+                        <li>Twitter</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Designed By Ansh & Anmol😊</p>
+        </div>
+    </div>
+    
+
+  
+
+
+<script src="script.js"></script>
+</body>
+</html>
